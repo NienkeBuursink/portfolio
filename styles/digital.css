@@ -1,0 +1,109 @@
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
+}
+
+article {
+    background-color: var(--accent-color);
+    color: var(--main-color-light);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    & a {
+        color: var(--main-color-light);
+        font-style: italic;
+    }
+    & div {
+        grid-column: 2/3;
+        grid-row: 1/5;
+        & img {
+            margin: .5em;
+            object-fit: contain;
+        }
+    }
+}
+
+#shineapp, #muziekmakkers, #groenegrachten {
+    background-color: var(--main-color-light);
+    color: white;
+    & a {
+        color: white;
+    }
+}
+
+
+
+#paintpal div {
+       display: flex;
+       justify-content: center;
+       & img {
+        max-width: 40%;
+       }
+}
+
+#shineapp div {
+    display: grid;
+    place-items: center;
+    & img {
+        max-width: 85%;
+    }
+}
+
+#muziekmakkers div {
+    display: grid;
+    place-items: center;
+    & img {
+        max-width: 95%;
+    }
+}
+
+#pcj div {
+    display: flex;
+    justify-content: center;
+    & img {
+     max-width: 40%;
+    }
+}
+
+#gitaargangster div {
+    display: grid;
+    place-items: center;
+    & img:first-of-type {
+        max-width: 35%;
+    }
+    & img:nth-of-type(2) {
+        max-width: 80%;
+    }
+}
+
+#groenegrachten div {
+    display: flex;
+    justify-content: center;
+    & img {
+     max-width: 40%;
+    }
+}
+
+@media (max-width: 60em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #shineapp,#pcj, #groenegrachten {
+        background-color: var(--main-color-light);
+        color: white;
+        & a {
+            color: white;
+        }
+    }
+
+    #muziekmakkers {
+        background-color: var(--accent-color);
+        color: var(--main-color-light);
+        & a {
+            color: var(--main-color-light);
+        }
+    }
+}

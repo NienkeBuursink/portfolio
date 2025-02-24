@@ -1,0 +1,80 @@
+h1 {
+    margin-top: 2em;
+}
+
+p {
+    font-size: 2em;
+}
+
+/* alle sections */
+section:not(section:first-of-type) {
+    background-color: var(--main-color-light);
+    border-radius: 2em;
+    margin: 5em 2em;
+    padding: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+}
+
+section:not(section:first-of-type) img {
+    grid-column: 2/3;
+    grid-row: 1/6;
+    object-fit: fill;
+    border-radius: 1em;
+    border: solid, var(--accent-color), .5em;
+    align-self: center;
+    margin: .5em;
+}
+
+section:not(section:first-of-type) h2,
+section:not(section:first-of-type) p,
+section:not(section:first-of-type) li {
+    color: white;
+}
+
+section:not(section:first-of-type) a {
+    display: block;
+    background-color: var(--accent-color);
+    color: var(--main-color-light);
+
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 2em;
+    font-size: 1.5em;
+    width: 35%;
+    text-align: center;
+
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+section:nth-of-type(3) li {
+    font-size: 2em;
+}
+
+
+/* beginnetje */
+section:first-of-type {
+    display: grid;
+    text-align: center;
+    height: 35em;
+    align-items: center;
+}
+
+section:first-of-type p {
+    color: var(--main-color-light);
+}
+
+section:first-of-type div {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+section:first-of-type div img {
+    aspect-ratio: 1;
+    width: 20%;
+    border-radius: 1em;
+    border: solid, var(--accent-color), .5em;
+}

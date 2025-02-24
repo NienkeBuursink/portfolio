@@ -1,0 +1,46 @@
+main {
+    display: grid;
+    justify-items: center;
+}
+
+section {
+    position: relative; 
+    overflow: hidden;
+}
+
+  .column, .column-reverse {
+    position: relative;
+    will-change: transform; 
+    transition: opacity 0.3s ease-in-out; 
+  }
+
+  .visible {
+    opacity: 1; /* Fully visible when class is added */
+  }
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4em;
+    margin: 3em;
+    border-radius: 3em;
+    max-width: 80em;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+}
+
+section div img {
+    margin: 1em;
+    border-radius: 1em;
+}
+
+section div:first-of-type img:first-of-type {
+  opacity: 0;
+}
+
+section div img:last-of-type {
+  opacity: 0;
+}
