@@ -4,7 +4,7 @@ article {
     background-color: var(--main-color-light);
     color: var(--main-color-dark);
     padding: 2em;
-    max-width: 80em;
+    max-width: 60em;
     justify-self: center;
     & a {
         color: var(--main-color-dark);

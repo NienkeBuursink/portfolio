@@ -15,7 +15,7 @@ section {
   }
 
   .visible {
-    opacity: 1; /* Fully visible when class is added */
+    opacity: 1;
   }
 
 section {
@@ -37,10 +37,9 @@ section div img {
     border-radius: 1em;
 }
 
-section div:first-of-type img:first-of-type {
-  opacity: 0;
-}
-
+section div:first-of-type img:first-of-type,
+section div:first-of-type img:nth-of-type(2),
+section div:first-of-type img:nth-of-type(12),
 section div img:last-of-type {
   opacity: 0;
 }
