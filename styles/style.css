@@ -1,0 +1,83 @@
+@font-face {
+    font-family: stainedglass;
+    src: url(../fonts/dragon-fly-font/DragonFly-2XeX.ttf);
+    /* https://www.fontspace.com/dragon-fly-font-f12276 */
+}
+
+@font-face {
+    font-family: church;
+    src: url(../fonts/church.ttf);
+    /* https://www.dafont.com/black-clover.font */
+}
+
+@font-face {
+    font-family: magical;
+    src: url(../fonts/magical.ttf);
+    /* https://www.fontspace.com/magical-stranger-font-f139281 */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    color-scheme: light dark;
+    --bg: light-dark(#beeabe, #3E5526);
+    --darker-bg: light-dark(#2d4e2d, #0f1606);
+    --text-clr: light-dark(#3E5526, #ffefce);
+    --sky-clr: light-dark(rgb(171, 239, 239), rgb(3, 3, 64));
+    --accent-clr: #ab2a02;
+    --accent-2: #F2d275;
+
+    /* fonts */
+    --header-font: stainedglass, Georgia, 'Times New Roman', Times, serif;
+    --text-font: magical, sans-serif;
+
+    /* sizes */
+    --content-width: clamp(5rem, 85%, 60rem);
+    --article-spacing: 3rem;
+    --header-size: clamp(2rem, 5vw, 4rem);
+    --header-size-small: clamp(1.5rem, 3vw, 2.3rem);
+    --text-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+html {
+    overflow-x: clip;
+}
+
+body {
+    background-color: var(--bg);
+    padding-bottom: 2rem;
+
+    & * {
+        color: var(--text-clr);
+        font-size: var(--text-size);
+        font-family: var(--text-font);
+    }
+}
+
+div {
+    display: block;
+}
+
+main {
+    width: var(--content-width);
+    place-self: center;
+}
+
+h1,
+h2 {
+    font-family: var(--header-font);
+    font-size: var(--header-size);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--text-font);
+    font-size: var(--header-size-small);
+}

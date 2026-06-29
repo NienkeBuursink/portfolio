@@ -1,0 +1,94 @@
+header{
+    height: 180vh;
+    width: auto;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    div{
+        place-items: center;
+    }
+    nav{
+        display: grid;
+        place-items: center;
+        ul{
+            rotate: -90deg;
+            list-style: none;
+            display: block;
+            li{
+                overflow: clip;
+                padding-right: .5em;
+                border: 4px solid var(--text-clr);
+                border-radius: 0 50% 50% 0 / 0 100% 100% 0;
+                margin-block: .8em;
+                background: linear-gradient(
+                    to right in hsl,
+                    var(--accent-clr),
+                    var(--accent-2),
+                    var(--sky-clr) 40%
+                );
+                --scale-x: 1;
+                transform: scaleX(var(--scale-x));
+                transition: 
+                    filter .2s,
+                    transform .2s;
+                transform-origin: left;
+                &:hover{
+                    cursor: pointer;
+                    filter: drop-shadow(0 0 .3rem var(--text-clr));
+                    --scale-x: 1 !important;
+                }
+                            
+                &:nth-child(1),
+                &:nth-child(5){
+                    --scale-x: .7;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4){
+                    --scale-x: .85;
+                }
+
+            
+                &:has(+ li:hover),
+                &:hover + li {
+                   --scale-x: .85;
+                }
+                &:has(+ li + li:hover),
+                &:hover + li +li {
+                    --scale-x: .7;
+                }
+                &:has(+ li + li + li:hover),
+                &:hover + li + li + li{
+                    --scale-x: .6;
+                }
+                &:has(+ li + li + li + li:hover),
+                &:hover + li + li + li + li{
+                    --scale-x: .5;
+                }
+                @media (prefers-color-scheme: dark){
+                    background: linear-gradient(
+                        to right in oklch,
+                        var(--accent-clr),
+                        var(--accent-2),
+                        var(--sky-clr) 40%
+                    );
+                }
+                
+
+                a{
+                    display: block;
+                    text-decoration: none;
+                    font-family: church, serif;
+                    font-size: clamp(3rem, 15vw, 8rem);
+                    text-transform: uppercase;
+                    letter-spacing: normal;
+                    text-box: cap alphabetic;
+                    text-align: center;
+                    color: var(--text-clr);
+
+                }
+            }
+        }
+    }
+}

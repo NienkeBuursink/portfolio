@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leerdoelen</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/leerdoelen.css">
+    <script src="scripts/leerdoelen.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle" aria-hidden="true">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu openen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="websites.html">Websites</a></li>
+                <li><a href="weekly-nerds.html">Weekly nerds</a></li>
+                <li><a href="voortgang.html">Voortgang</a></li>
+                <li><a href="leerdoelen.html" aria-current="page">Leerdoelen</a></li>
+                <li><a href="overmij.html">Over mij</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Leerdoelen</h1>
+        <fieldset>
+            <div aria-label="" class="leaves"></div>
+            <div aria-label="" class="trunk"></div>
+            <legend>
+                Kies een sinaasappel om een leerdoel te bekijken
+            </legend>
+            <input type="radio" name="goal" id="goal1">
+            <label for="goal1" class="orange" aria-label="Check mijn eerste leerdoel">
+                🍊
+            </label>
+            <dialog>
+                <h2>Loslaten als ik in groepsverband werk</h2>
+                <p>Ik doe dit vaak niet, en merk dat ik dan veel stress en druk voel. Ik hoop dat loslaten tijdens het samenwerken mij helpt om te relaxen buiten werktijd om.</p>
+            </dialog>
+
+            <input type="radio" name="goal" id="goal2">
+            <label for="goal2" class="orange" aria-label="Check mijn tweede leerdoel">
+                🍊
+            </label>
+            <dialog>
+                <h2>Innovatieve manieren in navigatie vinden</h2>
+                <p>Een navigatiebalk bovenin de header is natuurlijk een bestaande conventie, maar ik wil de grens opzoeken tussen deze conventie en originaliteit.</p>
+            </dialog>
+
+            <input type="radio" name="goal" id="goal3">
+            <label for="goal3" class="orange" aria-label="Check mijn derde leerdoel">
+                🍊
+            </label>
+            <dialog>
+                <h2>Varieren in mijn ontwerpfase</h2>
+                <p>Ik heb vaak meteen een idee in mijn hoofd die ik dan precies zo wil uitvoeren, terwijl dat vaak niet het beste idee is vergeleken met andere iteraties.</p>
+            </dialog>
+        </fieldset>   
+    </main>
+    <div aria-label="" class="ground"></div> 
+    <div aria-label="" class="sun"></div> 
+</body>
+</html>

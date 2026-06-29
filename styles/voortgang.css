@@ -1,0 +1,94 @@
+main {
+    display: grid;
+    gap: 2.5rem;
+    padding-block: 2rem 4rem;
+}
+
+main > p {
+    max-width: 65ch;
+}
+
+.gesprek {
+    background: white;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.15);
+    display: grid;
+    gap: 1rem;
+}
+
+.gesprek details {
+    display: block;
+}
+
+.gesprek summary {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    gap: 0.35rem;
+}
+
+.gesprek summary::-webkit-details-marker {
+    display: none;
+}
+
+.gesprek h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #3E5526;
+}
+
+.gesprek h3 {
+    margin-top: 1rem;
+    color: var(--accent-clr);
+}
+
+.gesprek h4 {
+    font-size: clamp(1.3rem, 2.5vw, 2.1rem);
+    margin-top: 0.75rem;
+    color: var(--accent-2);
+}
+
+.gesprek p,
+.gesprek li {
+    color: #3E5526;
+    line-height: 1.3;
+}
+
+.meta {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    font-style: italic;
+}
+
+.gesprek-content {
+    padding-top: 0.75rem;
+    border-top: 1px solid color-mix(in srgb, var(--text-clr) 20%, transparent);
+    display: grid;
+    gap: 1rem;
+}
+
+.gesprek ul {
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.5rem;
+}
+
+.gesprek a {
+    color: var(--accent-2);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+}
+
+.gesprek a:hover,
+.gesprek a:focus-visible {
+    text-decoration: underline;
+}
+
+.gesprek:hover {
+    box-shadow: 0 0.65rem 1.75rem rgb(0 0 0 / 0.2);
+}
+
+.gesprek summary:focus-visible {
+    outline: 2px solid var(--accent-2);
+    outline-offset: 0.35rem;
+}
