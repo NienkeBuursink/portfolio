@@ -81,3 +81,7 @@ h6 {
     font-family: var(--text-font);
     font-size: var(--header-size-small);
 }
+
+img{
+    max-width: 100%;
+}
