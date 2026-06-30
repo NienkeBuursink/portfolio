@@ -63,6 +63,24 @@ header {
     width: 28px;
 }
 
+
+header nav ul li {
+    a[aria-current="page"] {
+        opacity: .67;
+        font-style: italic;
+        cursor: auto;
+        pointer-events: none;
+        text-decoration: none;
+    }
+
+    & a[aria-current="page"]::before {
+        content: '🌼';
+        opacity: 1;
+        padding-right: .2rem;
+    }
+}
+
+
 @media (max-width: 700px) {
 
     header {
@@ -99,7 +117,7 @@ header {
 
         /* Inklap animatie */
         max-height: 0;
-        overflow: hidden;
+        overflow: clip;
         opacity: 0;
         transform: scaleY(0.92) translateY(-8px);
         transform-origin: top right;
@@ -155,21 +173,5 @@ header {
     header nav ul li a:hover {
         padding-left: 2.4em;
         background: color-mix(in srgb, var(--text-clr) 6%, transparent);
-    }
-
-    /* Actieve pagina markeren */
-    header nav ul li {
-        a[aria-current="page"] {
-            padding-left: 2.4em;
-            opacity: .67;
-            font-style: italic;
-            cursor: auto;
-            pointer-events: none;
-        }
-
-        & a[aria-current="page"]::before {
-            content: '🌼';
-            opacity: 1;
-        }
     }
 }

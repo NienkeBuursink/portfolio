@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/overmij.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     <main>
         <h1>Over mij</h1>
 
-        <section class="profile">
+        <section class="profile card">
             <img src="images/overmij/profile-pic.jpg" alt="Nienke Buursink" class="profile-image">
 
             <div class="profile-content">
@@ -45,23 +46,57 @@
             </div>
         </section>
 
+        <section class="skills card">
+            <h2>Skills</h2>
+            <table>
+                <thead class="visually-hidden">
+                    <tr>
+                        <th scope="col">Vakgebied</th>
+                        <th scope="col">Niveau</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 & CSS3</td>
+                        <td style="--percent: 95%;">95%</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td style="--percent: 75%;">75%</td>
+                    </tr>
+                    <tr>
+                        <td>UI/UX Design</td>
+                        <td style="--percent: 70%;">70%</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td style="--percent: 85%;">85%</td>
+                    </tr>
+                    <tr>
+                        <td>Toegankelijkheid (WCAG)</td>
+                        <td style="--percent: 90%;">90%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
         <section class="hobbies">
             <h2>Mijn hobbies</h2>
 
             <div class="hobby-grid">
-                <div class="hobby-card">
+                <div class="hobby-card card">
                     <img src="images/overmij/guitar.jpg" alt="Gitaar spelen">
                     <h3>Gitaar spelen</h3>
                     <p>Ik speel graag gitaar en vind het heerlijk om muziek te maken.</p>
                 </div>
 
-                <div class="hobby-card">
+                <div class="hobby-card card">
                     <img src="images/overmij/painting.jpeg" alt="Schilderen">
                     <h3>Schilderen</h3>
                     <p>Schilderen is een van mijn favoriete manieren om creatief uit te zijn.</p>
                 </div>
 
-                <div class="hobby-card">
+                <div class="hobby-card card">
                     <img src="images/overmij/museum.jpg" alt="Musea bezoeken">
                     <h3>Musea bezoeken</h3>
                     <p>Ik bezoek graag musea om nieuwe kunst te ontdekken en mij te inspireren.</p>
@@ -69,7 +104,7 @@
             </div>
         </section>
 
-        <section class="interests">
+        <section class="interests card">
             <h2>Wat me motiveert</h2>
             <p>
                 Ik combineer graag ontwerp, interactie en development. Wat ik vooral leuk vind
@@ -78,6 +113,19 @@
             </p>
         </section>
     </main>
+    <footer>
+        <h2>Contact</h2>
+        <ul class="footer-links">
+            <li>
+                <a href="https://www.linkedin.com/in/nienke-buursink-9698b3341" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+                <a href="mailto:n.buursink06@gmail.com">n.buursink06@gmail.com</a>
+            </li>
+        </ul>
+        <p class="footer-copy">&copy; 2026 Nienke Buursink</p>
+    </footer>
     <script src="scripts/river.js" defer></script>
 </body>
+
 </html>

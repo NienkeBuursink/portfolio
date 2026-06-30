@@ -14,7 +14,7 @@
         grid-column: 1;
         place-self: start;
     }
-    img{
+    .profile-image{
         grid-column: 2;
         grid-row: 1/3;
         border-radius: 50%;
@@ -29,8 +29,8 @@
             box-shadow: 0 0 10px var(--text-clr);
         }
     }
-
 }
+
 header{
     height: 180vh;
     width: auto;
@@ -110,6 +110,43 @@ header{
 
                 }
             }
+        }
+    }
+}
+
+
+
+
+/* MARK: View transition */
+@media (prefers-reduced-motion: no-preference) {
+    .profile-image {
+        view-transition-name: profile-pic;
+    }
+
+    @view-transition {
+        navigation: auto;
+    }
+
+    ::view-transition-group(profile-pic) {
+        animation-duration: 1s;
+    }
+
+    ::view-transition-old(profile-pic),
+    ::view-transition-new(profile-pic) {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        overflow: hidden;
+        animation-name: square-to-circle;
+    }
+
+    @keyframes square-to-circle {
+        from { 
+            aspect-ratio: 1;
+            border-radius: 1rem; 
+        }
+        to { 
+            aspect-ratio: 1;
+            border-radius: 50%; 
         }
     }
 }

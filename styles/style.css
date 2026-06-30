@@ -28,6 +28,7 @@
     --bg: light-dark(#beeabe, #3E5526);
     --darker-bg: light-dark(#2d4e2d, #0f1606);
     --text-clr: light-dark(#3E5526, #ffefce);
+    --reverse-text-clr: light-dark(#ffefce, #3E5526);
     --sky-clr: light-dark(rgb(171, 239, 239), rgb(3, 3, 64));
     --accent-clr: #ab2a02;
     --accent-2: #F2d275;
@@ -41,7 +42,7 @@
     --article-spacing: 3rem;
     --header-size: clamp(2rem, 5vw, 4rem);
     --header-size-small: clamp(1.5rem, 3vw, 2.3rem);
-    --text-size: clamp(1.2rem, 2vw, 1.6rem);
+    --text-size: clamp(1rem, 1.8vw, 1.5rem);
 }
 
 html {
@@ -84,4 +85,19 @@ h6 {
 
 img{
     max-width: 100%;
+}
+
+.card {
+    background: light-dark(#fffdf5, #2a3d18);
+}
+
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: clip;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
