@@ -154,7 +154,7 @@ header{
 
 
 /* MARK: responsive */
-@media (max-width: 720px){
+@media (max-width: 860px){
     .intro{
         text-align: center;
         grid-template-columns: auto;

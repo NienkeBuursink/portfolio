@@ -81,7 +81,7 @@ header nav ul li {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 860px) {
 
     header {
         position: relative;

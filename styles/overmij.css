@@ -175,7 +175,7 @@ img {
 
 
 /* MARK: responsive */
-@media (max-width: 720px){
+@media (max-width: 860px){
     .profile{
         grid-template-columns: 1fr;
         .profile-image{

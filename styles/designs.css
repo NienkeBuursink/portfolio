@@ -318,7 +318,7 @@ label:has([type="checkbox"]) {
 /* ///////////// */
 /* MARK: @media
 /* ///////////// */
-@media (max-width: 720px) {
+@media (max-width: 860px) {
     main {
         margin-top: calc(var(--candle-height) + 2rem);
 
