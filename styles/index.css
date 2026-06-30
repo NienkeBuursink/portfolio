@@ -60,7 +60,7 @@ header{
                     var(--accent-2),
                     var(--sky-clr) 40%
                 );
-                --scale-x: 1;
+                --scale-x: 1.2;
                 transform: scaleX(var(--scale-x));
                 transition: 
                     filter .2s,
@@ -69,18 +69,18 @@ header{
                 &:hover{
                     cursor: pointer;
                     filter: drop-shadow(0 0 .3rem var(--text-clr));
-                    --scale-x: 1 !important;
+                    --scale-x: 1.2 !important;
                 }
                             
                 &:nth-child(1),
                 &:nth-child(3){
-                    --scale-x: .8;
+                    --scale-x: .9;
                 }
 
             
                 &:has(+ li:hover),
                 &:hover + li {
-                   --scale-x: .8;
+                   --scale-x: .9;
                 }
                 &:has(+ li + li:hover),
                 &:hover + li +li {
@@ -147,6 +147,19 @@ header{
         to { 
             aspect-ratio: 1;
             border-radius: 50%; 
+        }
+    }
+}
+
+
+
+/* MARK: responsive */
+@media (max-width: 720px){
+    .intro{
+        text-align: center;
+        grid-template-columns: auto;
+        .profile-image{
+            grid-area: auto;
         }
     }
 }

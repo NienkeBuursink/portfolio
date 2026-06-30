@@ -171,3 +171,15 @@ img {
         }
     }
 }
+
+
+
+/* MARK: responsive */
+@media (max-width: 720px){
+    .profile{
+        grid-template-columns: 1fr;
+        .profile-image{
+            aspect-ratio: 1;
+        }
+    }
+}
